@@ -1,0 +1,894 @@
+operation	宿主动作	适配状态	上游定义
+client.common.upload_gettoken	common-upload-gettoken	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L2286
+client.common.upload_url	common-upload-url	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L2319
+client.cookie.upload_avatar	upload-avatar	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27729
+client.cookie.upload_avatar2		未交付 · required non-payload parameter file	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27785
+client.cookie.upload_chat_image		未交付 · required non-payload parameter file	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L28281
+client.cookie.upload_chat_image_init	upload-chat-image-init	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27845
+client.cookie.upload_file	upload-cookie-file	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L28641
+client.cookie.upload_file_image		未交付 · required non-payload parameter file	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L28385
+client.cookie.upload_file_init	upload-cookie-prepare	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L28086
+client.cookie.upload_file_sample	upload-form-file	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L28489
+client.cookie.upload_image	upload-image	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27906
+client.cookie.upload_image_init	upload-image-init	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27958
+client.cookie.upload_info	upload-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27466
+client.cookie.upload_info_app	upload-info-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27501
+client.cookie.upload_init		未交付 · expression self.user_key	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27538
+client.cookie.upload_key		未交付 · FunctionDef	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27616
+client.cookie.upload_resume		未交付 · AnnAssign	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27659
+client.cookie.upload_sample_init	upload-form-init	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L28017
+client.open.upload_file	upload-open-file	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4534
+client.open.upload_file_init	upload-open-prepare	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4416
+client.open.upload_file_init_open	upload-open-prepare	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4729
+client.open.upload_file_open	upload-open-file	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4730
+client.open.upload_gettoken_open	open-upload-gettoken-open	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4242
+client.open.upload_init	open-upload-init	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4283
+client.open.upload_init_open	open-upload-init	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4726
+client.open.upload_resume		未交付 · AnnAssign	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4340
+client.open.upload_resume_open		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4727
+client.cookie.download_downfolder_app	download-downfolder-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L8653
+client.cookie.download_files	download-files	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L8428
+client.cookie.download_files_app	download-files-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L8481
+client.cookie.download_folders	download-folders	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L8541
+client.cookie.download_folders_app	download-folders-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L8594
+client.cookie.download_url	link-cookie-one	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L8708
+client.cookie.download_url_app	link-cookie-info	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L8974
+client.cookie.download_url_web	download-file	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L9073
+client.cookie.download_url_web2	download-redirect	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L9170
+client.cookie.download_urls	link-cookie-many	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L8868
+client.open.download_url	link-open-one	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L2895
+client.open.download_url_info	link-open-info	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L3084
+client.open.download_url_info_open	link-open-info	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4707
+client.open.download_url_open	link-open-one	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4705
+client.open.download_urls	link-open-many	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L2989
+client.open.download_urls_open	link-open-many	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4706
+client.open.vip_qr_url	open-vip-qr-url	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4666
+client.open.vip_qr_url_open	open-vip-qr-url	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4731
+client.cookie.usershare_action	usershare-action	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L30345
+client.cookie.usershare_action_app	usershare-action-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L30393
+client.cookie.usershare_add_folder	usershare-add-folder	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L30256
+client.cookie.usershare_add_folder_app	usershare-add-folder-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L30301
+client.cookie.usershare_copy	usershare-copy	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L30440
+client.cookie.usershare_copy_app	usershare-copy-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L30486
+client.cookie.usershare_delete	usershare-delete	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L30531
+client.cookie.usershare_delete_app	usershare-delete-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L30576
+client.cookie.usershare_download_url		未交付 · required non-payload parameter share_id	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L30626
+client.cookie.usershare_download_url_web	download-team	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L30855
+client.cookie.usershare_download_urls		未交付 · required non-payload parameter pickcodes	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L30760
+client.cookie.usershare_file_list	usershare-file-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L30922
+client.cookie.usershare_file_list_app	usershare-file-list-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L31013
+client.cookie.usershare_info	usershare-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L31100
+client.cookie.usershare_info_app	usershare-info-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L31145
+client.cookie.usershare_invite	usershare-invite	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L31189
+client.cookie.usershare_invite_app	usershare-invite-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L31234
+client.cookie.usershare_list	usershare-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L31278
+client.cookie.usershare_list_app	usershare-list-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L31326
+client.cookie.usershare_member	usershare-member	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L31375
+client.cookie.usershare_member_app	usershare-member-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L31443
+client.cookie.usershare_share	usershare-share	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L31508
+client.cookie.usershare_share_app	usershare-share-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L31557
+client.cookie.recyclebin_clean	recyclebin-clean	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24820
+client.cookie.recyclebin_clean2	recyclebin-clean2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24877
+client.cookie.recyclebin_clean_app	recyclebin-clean-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24938
+client.cookie.recyclebin_info	recyclebin-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24996
+client.cookie.recyclebin_list	recyclebin-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L25039
+client.cookie.recyclebin_list_app	recyclebin-list-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L25105
+client.cookie.recyclebin_revert	recyclebin-revert	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L25168
+client.cookie.recyclebin_revert_app	recyclebin-revert-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L25217
+client.open.recyclebin_clean	open-recyclebin-clean	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4088
+client.open.recyclebin_clean_open	open-recyclebin-clean	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4723
+client.open.recyclebin_list	open-recyclebin-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4141
+client.open.recyclebin_list_open	open-recyclebin-list	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4724
+client.open.recyclebin_revert	open-recyclebin-revert	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4190
+client.open.recyclebin_revert_open	open-recyclebin-revert	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4725
+client.cookie.multimedia_collection_listen	multimedia-collection-listen	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L21438
+client.cookie.multimedia_collection_listen_set	multimedia-collection-listen-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L21489
+client.cookie.multimedia_collection_watch	multimedia-collection-watch	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L21535
+client.cookie.multimedia_collection_watch_set	multimedia-collection-watch-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L21586
+client.cookie.multimedia_cover_auto	multimedia-cover-auto	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L21632
+client.cookie.multimedia_cover_check	multimedia-cover-check	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L21678
+client.cookie.multimedia_date	multimedia-date	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L21723
+client.cookie.multimedia_listen	multimedia-listen	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L21769
+client.cookie.multimedia_listen_update	multimedia-listen-update	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L21843
+client.cookie.multimedia_recent_listen	multimedia-recent-listen	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22053
+client.cookie.multimedia_recent_listen_update	multimedia-recent-listen-update	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22099
+client.cookie.multimedia_recent_watch	multimedia-recent-watch	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22145
+client.cookie.multimedia_recent_watch_update	multimedia-recent-watch-update	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22191
+client.cookie.multimedia_relate_file	multimedia-relate-file	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22237
+client.cookie.multimedia_relate_file_update	multimedia-relate-file-update	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22286
+client.cookie.multimedia_related	multimedia-related	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22342
+client.cookie.multimedia_related_update	multimedia-related-update	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22388
+client.cookie.multimedia_relation	multimedia-relation	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22437
+client.cookie.multimedia_type	multimedia-type	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22480
+client.cookie.multimedia_type_update	multimedia-type-update	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22526
+client.cookie.multimedia_watch	multimedia-watch	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L21911
+client.cookie.multimedia_watch_update	multimedia-watch-update	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L21985
+client.common.cookies		未交付 · delegation CookieJar	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L528
+client.common.cookies_str		未交付 · delegation P115Cookies	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L563
+client.common.headers		未交付 · delegation KeyLowerDict[str, str]	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L534
+client.common.request		未交付 · required non-payload parameter url	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L602
+client.common.request_alock		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L559
+client.common.request_lock		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L555
+client.common.update_cookies		未交付 · expression isinstance(cookies, ClientRequestMixin)	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L584
+client.cookie.from_path		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4936
+client.cookie.get_fs		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L31616
+client.cookie.init		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4899
+client.open.init		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L2408
+client.open.pickcode_stable_point		未交付 · ImportFrom	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L2450
+client.open.to_id		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4733
+client.open.to_pickcode		未交付 · delegation to_pickcode	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4735
+client.support.check_response		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L223
+client.common.app_area_list		未交付 · FunctionDef	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L854
+client.common.app_face_codes		未交付 · FunctionDef	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L904
+client.common.app_publick_key	common-app-publick-key	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L942
+client.common.app_version_list	common-app-version-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L993
+client.common.app_version_list2	common-app-version-list2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L1026
+client.common.open		未交付 · required non-payload parameter url	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L797
+client.open.refresh_access_token		未交付 · FunctionDef	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L2495
+client.cookie.share_access_user_list	share-access-user-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L25270
+client.cookie.share_activate	share-activate	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L25313
+client.cookie.share_batch_renewal_long_skip	share-batch-renewal-long-skip	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L25356
+client.cookie.share_batch_skip_login_down	share-batch-skip-login-down	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L25404
+client.cookie.share_downlist	share-downlist	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L25458
+client.cookie.share_downlist_app	share-downlist-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L25515
+client.cookie.share_download_url	share-download-url	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L25578
+client.cookie.share_download_url_app	share-download-url-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L25659
+client.cookie.share_download_url_web	share-download-url-web	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L25726
+client.cookie.share_info	share-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L25780
+client.cookie.share_info_app	share-info-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L25825
+client.cookie.share_list	share-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L25869
+client.cookie.share_list_app	share-list-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L25923
+client.cookie.share_notlogin_dl_quota	share-notlogin-dl-quota	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L25967
+client.cookie.share_notlogin_dl_quota_app	share-notlogin-dl-quota-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L26004
+client.cookie.share_receive	share-receive	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L26044
+client.cookie.share_receive_app	share-receive-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L26101
+client.cookie.share_recvcode	share-recvcode	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L26154
+client.cookie.share_recvcode_app	share-recvcode-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L26201
+client.cookie.share_reshare	share-reshare	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L26247
+client.cookie.share_search	share-search	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L26295
+client.cookie.share_send	share-send	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L26364
+client.cookie.share_send_app	share-send-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L26421
+client.cookie.share_setting	share-setting	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L26475
+client.cookie.share_skip_login_check	share-skip-login-check	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L26512
+client.cookie.share_skip_login_down	share-skip-login-down	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L26556
+client.cookie.share_skip_login_down_details	share-skip-login-down-details	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L26877
+client.cookie.share_skip_login_down_first	share-skip-login-down-first	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L26834
+client.cookie.share_skip_login_download_url	share-skip-login-download-url	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L26605
+client.cookie.share_skip_login_download_url_app	share-skip-login-download-url-app	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L26701
+client.cookie.share_skip_login_download_url_web	share-skip-login-download-url-web	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L26774
+client.cookie.share_snap	share-snap	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L26930
+client.cookie.share_snap_app	share-snap-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27006
+client.cookie.share_update	share-update	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27069
+client.cookie.share_update_app	share-update-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27123
+client.cookie.diary_add		未交付 · expression expand_payload(payload, prefix='form', enum_seq=True)	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L7805
+client.cookie.diary_del	diary-del	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L7879
+client.cookie.diary_detail	diary-detail	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L7925
+client.cookie.diary_detail2	diary-detail2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L7972
+client.cookie.diary_edit		未交付 · expression expand_payload(payload, prefix='form', enum_seq=True)	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L8019
+client.cookie.diary_get_config	diary-get-config	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L8088
+client.cookie.diary_get_latest_tags	diary-get-latest-tags	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L8128
+client.cookie.diary_get_tag_color	diary-get-tag-color	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L8178
+client.cookie.diary_list	diary-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L8232
+client.cookie.diary_search	diary-search	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L8282
+client.cookie.diary_settag	diary-settag	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L8331
+client.cookie.diary_settop	diary-settop	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L8381
+client.cookie.msg_contacts_ls	msg-contacts-ls	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L21315
+client.cookie.msg_contacts_notice	msg-contacts-notice	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L21359
+client.cookie.msg_get_websocket_host	msg-get-websocket-host	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L21394
+client.cookie.life_batch_delete	life-batch-delete	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L19062
+client.cookie.life_behavior_detail	life-behavior-detail	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L19112
+client.cookie.life_behavior_detail_app	life-behavior-detail-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L19190
+client.cookie.life_behavior_doc_post_app	life-behavior-doc-post-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L19268
+client.cookie.life_behavior_img_post_app	life-behavior-img-post-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L19319
+client.cookie.life_calendar_getoption	life-calendar-getoption	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L19368
+client.cookie.life_calendar_getoption2	life-calendar-getoption2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L19409
+client.cookie.life_calendar_setoption	life-calendar-setoption	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L19449
+client.cookie.life_calendar_setoption2	life-calendar-setoption2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L19505
+client.cookie.life_cdlist	life-cdlist	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L19561
+client.cookie.life_clear_history	life-clear-history	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L19755
+client.cookie.life_get_pic_url	life-get-pic-url	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L19618
+client.cookie.life_get_pic_url2	life-get-pic-url2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L19686
+client.cookie.life_glist	life-glist	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L19801
+client.cookie.life_has_data	life-has-data	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L19863
+client.cookie.life_list	life-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L19911
+client.cookie.life_recent_browse	life-recent-browse	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20057
+client.cookie.life_recent_operation_items	life-recent-operation-items	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20105
+client.cookie.life_recent_operations	life-recent-operations	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20181
+client.cookie.life_recent_operations_clear	life-recent-operations-clear	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20238
+client.cookie.life_recent_operations_del	life-recent-operations-del	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20284
+client.cookie.life_set_top	life-set-top	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20331
+client.common.user_id		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L545
+client.cookie.user_base_info	user-base-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L28736
+client.cookie.user_card	user-card	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L28774
+client.cookie.user_count_space_nums	user-count-space-nums	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L28812
+client.cookie.user_display_uid_list	user-display-uid-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L28850
+client.cookie.user_fingerprint	user-fingerprint	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L28886
+client.cookie.user_info	user-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L28923
+client.cookie.user_info2	user-info2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L28993
+client.cookie.user_info3	user-info3	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29037
+client.cookie.user_info4	user-info4	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29072
+client.cookie.user_info4_app	user-info4-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29109
+client.cookie.user_info_set	user-info-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29147
+client.cookie.user_interests_list	user-interests-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29262
+client.cookie.user_key		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4947
+client.cookie.user_my	user-my	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29297
+client.cookie.user_my_info	user-my-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29332
+client.cookie.user_points_balance	user-points-balance	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29369
+client.cookie.user_points_sign	user-points-sign	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29407
+client.cookie.user_points_sign_post	user-points-sign-post	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29445
+client.cookie.user_points_transaction	user-points-transaction	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29490
+client.cookie.user_public	user-public	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29535
+client.cookie.user_public_set	user-public-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29572
+client.cookie.user_relation_info	user-relation-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29617
+client.cookie.user_security_key_check	user-security-key-check	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29657
+client.cookie.user_setting	user-setting	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29700
+client.cookie.user_setting2	user-setting2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29735
+client.cookie.user_setting_app	user-setting-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29889
+client.cookie.user_setting_app_set	user-setting-app-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29929
+client.cookie.user_setting_set	user-setting-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29772
+client.cookie.user_setting_web	user-setting-web	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29810
+client.cookie.user_setting_web_set	user-setting-web-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29851
+client.cookie.user_sign	user-sign	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L29966
+client.cookie.user_sign_set	user-sign-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L30003
+client.cookie.user_space_info	user-space-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L30046
+client.cookie.user_teen_mode_state	user-teen-mode-state	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L30084
+client.cookie.user_teen_mode_state_set	user-teen-mode-state-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L30124
+client.cookie.user_vip_check_spw	user-vip-check-spw	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L30173
+client.cookie.user_vip_limit	user-vip-limit	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L30211
+client.open.user_info	open-user-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4623
+client.open.user_info_open	open-user-info	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4728
+client.common.login_authorize_access_token_open	common-login-authorize-access-token-open	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L1130
+client.common.login_authorize_open		未交付 · request options	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L1065
+client.common.login_login	common-login-login	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L1187
+client.common.login_qrcode	common-login-qrcode	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L1255
+client.common.login_qrcode_access_token_open	common-login-qrcode-access-token-open	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L1302
+client.common.login_qrcode_scan	common-login-qrcode-scan	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L1351
+client.common.login_qrcode_scan_cancel	common-login-qrcode-scan-cancel	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L1394
+client.common.login_qrcode_scan_confirm	common-login-qrcode-scan-confirm	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L1439
+client.common.login_qrcode_scan_result	common-login-qrcode-scan-result	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L1485
+client.common.login_qrcode_scan_status	common-login-qrcode-scan-status	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L1552
+client.common.login_qrcode_token	common-login-qrcode-token	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L1599
+client.common.login_qrcode_token_open	common-login-qrcode-token-open	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L1637
+client.common.login_refresh_token_open	common-login-refresh-token-open	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L1740
+client.common.login_two_step_sms	common-login-two-step-sms	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L1793
+client.common.login_two_step_sms_login	common-login-two-step-sms-login	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L1844
+client.common.login_with_app_id		未交付 · FunctionDef	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L2186
+client.common.login_with_password		未交付 · required non-payload parameter app	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L1901
+client.common.login_with_qrcode		未交付 · FunctionDef	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L2012
+client.cookie.login		未交付 · FunctionDef	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4978
+client.cookie.login_another_app		未交付 · FunctionDef	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L5393
+client.cookie.login_another_open		未交付 · expression self.app_id	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L5535
+client.cookie.login_app		未交付 · FunctionDef	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20379
+client.cookie.login_bind_app		未交付 · FunctionDef	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L5614
+client.cookie.login_check_sso	login-check-sso	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20551
+client.cookie.login_device		未交付 · FunctionDef	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20583
+client.cookie.login_devices	login-devices	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20621
+client.cookie.login_info	login-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20659
+client.cookie.login_info_open		未交付 · expression self.app_id	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L5275
+client.cookie.login_log	login-log	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20699
+client.cookie.login_online	login-online	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20743
+client.cookie.login_open_auth_detail	login-open-auth-detail	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20423
+client.cookie.login_open_auth_list	login-open-auth-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20467
+client.cookie.login_open_deauth	login-open-deauth	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20507
+client.cookie.login_renewal	login-renewal	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20783
+client.cookie.login_ssoent		未交付 · Return	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20358
+client.cookie.login_status		未交付 · FunctionDef	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20820
+client.cookie.login_two_step_trust_device_del	login-two-step-trust-device-del	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20865
+client.cookie.login_two_step_trust_device_edit	login-two-step-trust-device-edit	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20912
+client.cookie.login_two_step_trust_device_list	login-two-step-trust-device-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L20957
+client.cookie.login_two_step_trust_device_trust	login-two-step-trust-device-trust	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L21005
+client.cookie.login_with_app		未交付 · FunctionDef	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L5106
+client.cookie.login_with_open		未交付 · expression self.app_id	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L5331
+client.cookie.login_without_app		未交付 · FunctionDef	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L5217
+client.cookie.logout	logout	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L21055
+client.cookie.logout_by_app		未交付 · FunctionDef	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L21097
+client.cookie.logout_by_ssoent	logout-by-ssoent	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L21207
+client.cookie.photo_album	photo-album	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23932
+client.cookie.photo_album_add	photo-album-add	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23975
+client.cookie.photo_album_group	photo-album-group	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24020
+client.cookie.photo_album_list	photo-album-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24063
+client.cookie.photo_album_update	photo-album-update	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24113
+client.cookie.photo_bind	photo-bind	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24158
+client.cookie.photo_list	photo-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24218
+client.cookie.photo_share_list	photo-share-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24586
+client.cookie.photo_share_remove	photo-share-remove	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24638
+client.cookie.photo_share_save	photo-share-save	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24680
+client.cookie.photo_share_timeline	photo-share-timeline	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24722
+client.cookie.photo_sharealbum	photo-sharealbum	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24269
+client.cookie.photo_sharealbum_add	photo-sharealbum-add	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24312
+client.cookie.photo_sharealbum_list	photo-sharealbum-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24356
+client.cookie.photo_sharealbum_member	photo-sharealbum-member	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24403
+client.cookie.photo_sharealbum_record_list	photo-sharealbum-record-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24448
+client.cookie.photo_sharealbum_record_update	photo-sharealbum-record-update	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24494
+client.cookie.photo_sharealbum_update	photo-sharealbum-update	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24539
+client.cookie.photo_timeline	photo-timeline	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L24769
+client.cookie.clouddownload_downpath	clouddownload-downpath	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L6686
+client.cookie.clouddownload_downpath_set	clouddownload-downpath-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L6729
+client.cookie.clouddownload_get_id	clouddownload-get-id	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L6776
+client.cookie.clouddownload_quota_info	clouddownload-quota-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L6834
+client.cookie.clouddownload_quota_package_array	clouddownload-quota-package-array	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L6881
+client.cookie.clouddownload_quota_package_info	clouddownload-quota-package-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L6928
+client.cookie.clouddownload_request		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L6636
+client.cookie.clouddownload_sign	clouddownload-sign	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L6971
+client.cookie.clouddownload_sign_app	clouddownload-sign-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L7008
+client.cookie.clouddownload_task	clouddownload-task	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L7050
+client.cookie.clouddownload_task_add_bt	clouddownload-task-add-bt	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L7106
+client.cookie.clouddownload_task_add_url	clouddownload-task-add-url	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L7170
+client.cookie.clouddownload_task_add_urls	clouddownload-task-add-urls	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L7228
+client.cookie.clouddownload_task_clear	clouddownload-task-clear	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L7293
+client.cookie.clouddownload_task_cnt	clouddownload-task-cnt	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L7356
+client.cookie.clouddownload_task_count	clouddownload-task-count	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L7410
+client.cookie.clouddownload_task_del	clouddownload-task-del	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L7459
+client.cookie.clouddownload_task_list	clouddownload-task-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L7522
+client.cookie.clouddownload_task_pause	clouddownload-task-pause	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L7581
+client.cookie.clouddownload_task_restart	clouddownload-task-restart	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L7637
+client.cookie.clouddownload_task_resume	clouddownload-task-resume	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L7693
+client.cookie.clouddownload_torrent	clouddownload-torrent	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L7749
+client.open.clouddownload_quota_info	open-clouddownload-quota-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L2555
+client.open.clouddownload_quota_info_open	open-clouddownload-quota-info	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4698
+client.open.clouddownload_task_add_bt	open-clouddownload-task-add-bt	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L2596
+client.open.clouddownload_task_add_bt_open	open-clouddownload-task-add-bt	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4699
+client.open.clouddownload_task_add_urls	open-clouddownload-task-add-urls	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L2646
+client.open.clouddownload_task_add_urls_open	open-clouddownload-task-add-urls	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4700
+client.open.clouddownload_task_clear	open-clouddownload-task-clear	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L2696
+client.open.clouddownload_task_clear_open	open-clouddownload-task-clear	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4701
+client.open.clouddownload_task_del	open-clouddownload-task-del	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L2750
+client.open.clouddownload_task_del_open	open-clouddownload-task-del	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4702
+client.open.clouddownload_task_list	open-clouddownload-task-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L2798
+client.open.clouddownload_task_list_open	open-clouddownload-task-list	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4703
+client.open.clouddownload_torrent	open-clouddownload-torrent	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L2845
+client.open.clouddownload_torrent_open	open-clouddownload-torrent	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4704
+client.cookie.note_bookmark_list	note-bookmark-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22582
+client.cookie.note_cate_add	note-cate-add	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22637
+client.cookie.note_cate_del	note-cate-del	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22680
+client.cookie.note_cate_list	note-cate-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22766
+client.cookie.note_cate_list2	note-cate-list2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22809
+client.cookie.note_cate_update	note-cate-update	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22724
+client.cookie.note_del	note-del	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22854
+client.cookie.note_del2	note-del2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22899
+client.cookie.note_detail	note-detail	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22944
+client.cookie.note_detail2	note-detail2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L22987
+client.cookie.note_edit_attaches	note-edit-attaches	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23033
+client.cookie.note_fav_list	note-fav-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23079
+client.cookie.note_fav_set	note-fav-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23124
+client.cookie.note_get_pic_url	note-get-pic-url	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23169
+client.cookie.note_get_pic_url2	note-get-pic-url2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23233
+client.cookie.note_is_fav	note-is-fav	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23297
+client.cookie.note_list	note-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23348
+client.cookie.note_list2	note-list2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23398
+client.cookie.note_save	note-save	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23447
+client.cookie.note_save2	note-save2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23502
+client.cookie.note_search	note-search	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23556
+client.cookie.note_set_cate	note-set-cate	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23621
+client.cookie.note_set_cate2	note-set-cate2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23663
+client.cookie.note_set_tag	note-set-tag	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23705
+client.cookie.note_tag_color	note-tag-color	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23753
+client.cookie.note_tag_latest	note-tag-latest	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23803
+client.cookie.note_user_setting	note-user-setting	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23850
+client.cookie.note_user_setting_set	note-user-setting-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L23887
+client.cookie.tool_clear_empty_folder	tool-clear-empty-folder	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27175
+client.cookie.tool_repeat	tool-repeat	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27212
+client.cookie.tool_repeat_delete	tool-repeat-delete	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27255
+client.cookie.tool_repeat_delete_status	tool-repeat-delete-status	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27307
+client.cookie.tool_repeat_list	tool-repeat-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27344
+client.cookie.tool_repeat_status	tool-repeat-status	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27388
+client.cookie.tool_space	tool-space	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L27423
+client.cookie.fs		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L31586
+client.cookie.fs_batch_edit	fs-batch-edit	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10367
+client.cookie.fs_batch_edit_app	fs-batch-edit-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10410
+client.cookie.fs_category_get	fs-category-get	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10452
+client.cookie.fs_category_get_app	fs-category-get-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10518
+client.cookie.fs_category_shortcut	fs-category-shortcut	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10583
+client.cookie.fs_category_shortcut_set	fs-category-shortcut-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10630
+client.cookie.fs_copy	fs-copy	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10685
+client.cookie.fs_copy_app	fs-copy-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10745
+client.cookie.fs_cover_set	fs-cover-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10799
+client.cookie.fs_cover_set_app	fs-cover-set-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10846
+client.cookie.fs_delete	fs-delete	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10891
+client.cookie.fs_delete_app	fs-delete-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10952
+client.cookie.fs_desc	fs-desc	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L11025
+client.cookie.fs_desc_app	fs-desc-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L11074
+client.cookie.fs_desc_set	fs-desc-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L11124
+client.cookie.fs_desc_set_app	fs-desc-set-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L11174
+client.cookie.fs_dir_getid	fs-dir-getid	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L11222
+client.cookie.fs_dir_getid2	fs-dir-getid2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L11270
+client.cookie.fs_dir_getid_app	fs-dir-getid-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L11322
+client.cookie.fs_document	fs-document	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L11366
+client.cookie.fs_document_app	fs-document-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L11414
+client.cookie.fs_edit	fs-edit	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L11461
+client.cookie.fs_export_dir	fs-export-dir	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L11623
+client.cookie.fs_export_dir_app	fs-export-dir-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L11675
+client.cookie.fs_export_dir_status	fs-export-dir-status	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L11725
+client.cookie.fs_export_dir_status_app	fs-export-dir-status-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L11770
+client.cookie.fs_file	fs-file	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L11814
+client.cookie.fs_file_skim	fs-file-skim	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L11864
+client.cookie.fs_files	fs-files	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L11917
+client.cookie.fs_files_app	fs-files-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L12106
+client.cookie.fs_files_app2	fs-files-app2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L12263
+client.cookie.fs_files_aps	fs-files-aps	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L12396
+client.cookie.fs_files_blank_document	fs-files-blank-document	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L12524
+client.cookie.fs_files_cover	fs-files-cover	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L12570
+client.cookie.fs_files_cover_set	fs-files-cover-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L12614
+client.cookie.fs_files_image	fs-files-image	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L12659
+client.cookie.fs_files_image_app	fs-files-image-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L12726
+client.cookie.fs_files_media	fs-files-media	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L12801
+client.cookie.fs_files_media_app	fs-files-media-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L12903
+client.cookie.fs_files_recent_docs	fs-files-recent-docs	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L12998
+client.cookie.fs_files_recent_docs_app	fs-files-recent-docs-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13046
+client.cookie.fs_files_second_type	fs-files-second-type	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13093
+client.cookie.fs_files_second_type_app	fs-files-second-type-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13150
+client.cookie.fs_files_update_app	fs-files-update-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13208
+client.cookie.fs_folder_app	fs-folder-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13267
+client.cookie.fs_folder_app2	fs-folder-app2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13318
+client.cookie.fs_folder_file	fs-folder-file	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13368
+client.cookie.fs_folder_playlong	fs-folder-playlong	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13420
+client.cookie.fs_folder_playlong_set		未交付 · expression isinstance(ids, (int, str))	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13465
+client.cookie.fs_folder_update_app	fs-folder-update-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13512
+client.cookie.fs_folder_update_app2	fs-folder-update-app2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13565
+client.cookie.fs_hidden_switch	fs-hidden-switch	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13721
+client.cookie.fs_hidden_switch_app	fs-hidden-switch-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13780
+client.cookie.fs_hide	fs-hide	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13618
+client.cookie.fs_hide_app	fs-hide-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13672
+client.cookie.fs_history	fs-history	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13832
+client.cookie.fs_history_app	fs-history-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13883
+client.cookie.fs_history_clean	fs-history-clean	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13933
+client.cookie.fs_history_clean_app	fs-history-clean-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14085
+client.cookie.fs_history_delete	fs-history-delete	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13989
+client.cookie.fs_history_delete_app	fs-history-delete-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14037
+client.cookie.fs_history_list	fs-history-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14142
+client.cookie.fs_history_list_app	fs-history-list-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14203
+client.cookie.fs_history_move_target_list	fs-history-move-target-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14261
+client.cookie.fs_history_receive_list	fs-history-receive-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14352
+client.cookie.fs_history_receive_list_app	fs-history-receive-list-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14399
+client.cookie.fs_history_rename_list	fs-history-rename-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14447
+client.cookie.fs_history_rename_list_app	fs-history-rename-list-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14500
+client.cookie.fs_history_set	fs-history-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14550
+client.cookie.fs_history_set_app	fs-history-set-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14605
+client.cookie.fs_image	fs-image	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14659
+client.cookie.fs_imagedata	fs-imagedata	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14704
+client.cookie.fs_index_info	fs-index-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14747
+client.cookie.fs_info	fs-category-get	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10558
+client.cookie.fs_info_app	fs-category-get-app	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10559
+client.cookie.fs_label_add		未交付 · expression isinstance(payload[0], tuple)	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14790
+client.cookie.fs_label_add_app		未交付 · expression isinstance(payload[0], tuple)	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14839
+client.cookie.fs_label_batch	fs-label-batch	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L15416
+client.cookie.fs_label_batch_app	fs-label-batch-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L15471
+client.cookie.fs_label_del	fs-label-del	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14887
+client.cookie.fs_label_del_app	fs-label-del-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14944
+client.cookie.fs_label_edit	fs-label-edit	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14988
+client.cookie.fs_label_edit_app	fs-label-edit-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L15034
+client.cookie.fs_label_files	fs-label-files	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L15079
+client.cookie.fs_label_list	fs-label-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L15199
+client.cookie.fs_label_list_app	fs-label-list-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L15255
+client.cookie.fs_label_set	fs-label-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L15311
+client.cookie.fs_label_set_app	fs-label-set-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L15368
+client.cookie.fs_makedirs	fs-makedirs	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L15525
+client.cookie.fs_makedirs_app	fs-makedirs-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L15581
+client.cookie.fs_mkdir	fs-mkdir	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L15641
+client.cookie.fs_mkdir_app	fs-mkdir-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L15696
+client.cookie.fs_move	fs-move	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L15748
+client.cookie.fs_move_app	fs-move-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L15821
+client.cookie.fs_move_check_conflict	fs-move-check-conflict	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L15876
+client.cookie.fs_move_progress	fs-move-progress	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L15929
+client.cookie.fs_music	fs-music	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L15972
+client.cookie.fs_music_app	fs-music-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16023
+client.cookie.fs_music_file_exist	fs-music-file-exist	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16072
+client.cookie.fs_music_fond_list	fs-music-fond-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16116
+client.cookie.fs_music_fond_list_app	fs-music-fond-list-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16153
+client.cookie.fs_music_fond_set	fs-music-fond-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16191
+client.cookie.fs_music_include_list	fs-music-include-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16236
+client.cookie.fs_music_include_list_app	fs-music-include-list-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16285
+client.cookie.fs_music_info	fs-music-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16333
+client.cookie.fs_music_info_app	fs-music-info-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16378
+client.cookie.fs_music_list	fs-music-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16422
+client.cookie.fs_music_list_app	fs-music-list-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16470
+client.cookie.fs_music_new	fs-music-new	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16517
+client.cookie.fs_music_new_app	fs-music-new-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16566
+client.cookie.fs_music_set	fs-music-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16612
+client.cookie.fs_music_status	fs-music-status	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16665
+client.cookie.fs_music_topic_listnew	fs-music-topic-listnew	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16708
+client.cookie.fs_music_topic_listnew_app	fs-music-topic-listnew-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16760
+client.cookie.fs_music_topic_set	fs-music-topic-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16810
+client.cookie.fs_office_check_complete	fs-office-check-complete	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16855
+client.cookie.fs_office_init	fs-office-init	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16898
+client.cookie.fs_office_save	fs-office-save	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16941
+client.cookie.fs_order_set	fs-order-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L16992
+client.cookie.fs_order_set_app	fs-order-set-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L17050
+client.cookie.fs_preview	fs-preview	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L17110
+client.cookie.fs_rename	fs-rename	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L17154
+client.cookie.fs_rename_app	fs-rename-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L17204
+client.cookie.fs_rename_reset_names	fs-rename-reset-names	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L17291
+client.cookie.fs_rename_set_names	fs-rename-set-names	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L17253
+client.cookie.fs_repeat_sha1	fs-repeat-sha1	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L17329
+client.cookie.fs_repeat_sha1_app	fs-repeat-sha1-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L17378
+client.cookie.fs_score_set	fs-score-set	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L17428
+client.cookie.fs_search	fs-search	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L17474
+client.cookie.fs_search_app	fs-search-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L17599
+client.cookie.fs_search_app2	fs-search-app2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L17709
+client.cookie.fs_shasearch	fs-shasearch	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L17820
+client.cookie.fs_show_play_long_set	fs-show-play-long-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L17868
+client.cookie.fs_show_play_long_set_app	fs-show-play-long-set-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L17915
+client.cookie.fs_space_report		未交付 · expression datetime.now()	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L17960
+client.cookie.fs_space_summury	fs-space-summury	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18009
+client.cookie.fs_star_set	fs-star-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18048
+client.cookie.fs_star_set_app	fs-star-set-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18104
+client.cookie.fs_storage_info	fs-storage-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18157
+client.cookie.fs_supervision	fs-supervision	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18194
+client.cookie.fs_supervision_app	fs-supervision-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18243
+client.cookie.fs_sys_dir	fs-sys-dir	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18293
+client.cookie.fs_top_set	fs-top-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18339
+client.cookie.fs_video	fs-video	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18388
+client.cookie.fs_video_add_caption_map	fs-video-add-caption-map	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18508
+client.cookie.fs_video_app		未交付 · FunctionDef	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18447
+client.cookie.fs_video_def_set	fs-video-def-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18553
+client.cookie.fs_video_history	fs-history	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13857
+client.cookie.fs_video_history_app	fs-history-app	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L13909
+client.cookie.fs_video_history_set	fs-history-set	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14579
+client.cookie.fs_video_history_set_app	fs-history-set-app	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L14635
+client.cookie.fs_video_is_transcode	fs-video-is-transcode	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18596
+client.cookie.fs_video_m3u8	fs-video-m3u8	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18641
+client.cookie.fs_video_multitrack_set	fs-video-multitrack-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18697
+client.cookie.fs_video_push	fs-video-push	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18740
+client.cookie.fs_video_push_batch	fs-video-push-batch	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18789
+client.cookie.fs_video_push_batch2	fs-video-push-batch2	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18833
+client.cookie.fs_video_subtitle	fs-video-subtitle	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18877
+client.cookie.fs_video_subtitle_app	fs-video-subtitle-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18922
+client.cookie.fs_video_subtitle_set	fs-video-subtitle-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L18966
+client.cookie.fs_video_transcode	fs-video-transcode	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L19012
+client.open.fs_copy	open-fs-copy	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L3149
+client.open.fs_copy_open	open-fs-copy	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4708
+client.open.fs_delete	open-fs-delete	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L3205
+client.open.fs_delete_open	open-fs-delete	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4709
+client.open.fs_files	open-fs-files	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L3257
+client.open.fs_files_open	open-fs-files	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4710
+client.open.fs_info	open-fs-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L3392
+client.open.fs_info_open	open-fs-info	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4711
+client.open.fs_mkdir	open-fs-mkdir	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L3469
+client.open.fs_mkdir_open	open-fs-mkdir	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4712
+client.open.fs_move	open-fs-move	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L3521
+client.open.fs_move_open	open-fs-move	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4713
+client.open.fs_rename	open-fs-rename	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L3574
+client.open.fs_rename_open	open-fs-rename	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4714
+client.open.fs_search	open-fs-search	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L3617
+client.open.fs_search_open	open-fs-search	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4715
+client.open.fs_star_set	open-fs-star-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L3734
+client.open.fs_star_set_open	open-fs-star-set	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4716
+client.open.fs_update	open-fs-update	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4030
+client.open.fs_update_open	open-fs-update	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4722
+client.open.fs_video	open-fs-video	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L3784
+client.open.fs_video_history	open-fs-video-history	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L3835
+client.open.fs_video_history_open	open-fs-video-history	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4718
+client.open.fs_video_history_set	open-fs-video-history-set	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L3882
+client.open.fs_video_history_set_open	open-fs-video-history-set	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4719
+client.open.fs_video_open	open-fs-video	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4717
+client.open.fs_video_push	open-fs-video-push	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L3931
+client.open.fs_video_push_open	open-fs-video-push	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4720
+client.open.fs_video_subtitle	open-fs-video-subtitle	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L3983
+client.open.fs_video_subtitle_open	open-fs-video-subtitle	同一动作的上游别名	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L4721
+client.cookie.extract_add_file	extract-add-file	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L9247
+client.cookie.extract_add_file_app	extract-add-file-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L9304
+client.cookie.extract_download_url		未交付 · required non-payload parameter path	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L9364
+client.cookie.extract_download_url_app	download-extract-app	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L9447
+client.cookie.extract_download_url_web	download-extract-web	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L9504
+client.cookie.extract_file		未交付 · AnnAssign	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L9575
+client.cookie.extract_folders	extract-folders	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L9741
+client.cookie.extract_folders_app	extract-folders-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L9786
+client.cookie.extract_folders_post	extract-folders-post	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L9830
+client.cookie.extract_folders_post_app	extract-folders-post-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L9875
+client.cookie.extract_info	extract-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L9919
+client.cookie.extract_info_app	extract-info-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L9969
+client.cookie.extract_list	extract-list	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10024
+client.cookie.extract_progress	extract-progress	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10090
+client.cookie.extract_progress_app	extract-progress-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10135
+client.cookie.extract_push	extract-push	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10179
+client.cookie.extract_push_app	extract-push-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10228
+client.cookie.extract_push_progress	extract-push-progress	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10276
+client.cookie.extract_push_progress_app	extract-push-progress-app	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L10321
+client.cookie.act_xys_adopt	act-xys-adopt	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L5735
+client.cookie.act_xys_aid_desire	act-xys-aid-desire	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L5781
+client.cookie.act_xys_aid_desire_del	act-xys-aid-desire-del	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L5828
+client.cookie.act_xys_desire_aid_list	act-xys-desire-aid-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L5874
+client.cookie.act_xys_get_act_info	act-xys-get-act-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L5923
+client.cookie.act_xys_get_desire_info	act-xys-get-desire-info	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L5963
+client.cookie.act_xys_home_list	act-xys-home-list	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L6007
+client.cookie.act_xys_my_aid_desire	act-xys-my-aid-desire	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L6047
+client.cookie.act_xys_my_desire	act-xys-my-desire	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L6102
+client.cookie.act_xys_wish	act-xys-wish	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L6157
+client.cookie.act_xys_wish_del	act-xys-wish-del	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L6206
+client.cookie.captcha_all	captcha-all	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L6250
+client.cookie.captcha_code	captcha-code	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L6286
+client.cookie.captcha_sign	captcha-sign	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L6322
+client.cookie.captcha_single	captcha-single	JSON 对象绑定	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L6359
+client.cookie.captcha_verify	captcha-verify	无状态连接适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/client.py#L6403
+fs.fs.P115FileSystem.copy		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs.py#L511
+fs.fs.P115FileSystem.get_url		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs.py#L438
+fs.fs.P115FileSystem.iterdir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs.py#L398
+fs.fs.P115FileSystem.mkdir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs.py#L583
+fs.fs.P115FileSystem.move		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs.py#L656
+fs.fs.P115FileSystem.path_class		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs.py#L246
+fs.fs.P115FileSystem.remove		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs.py#L737
+fs.fs.P115FileSystem.rename		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs.py#L807
+fs.fs.P115FileSystem.upload		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs.py#L875
+fs.fs.P115Path.copy		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs.py#L59
+fs.fs.P115Path.mkdir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs.py#L98
+fs.fs.P115Path.move		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs.py#L142
+fs.fs.P115Path.remove		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs.py#L182
+fs.fs.P115Path.rename		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs.py#L222
+fs.fs_base.P115FileSystemBase.as_path		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1701
+fs.fs_base.P115FileSystemBase.attr_to_stat		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1734
+fs.fs_base.P115FileSystemBase.chdir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1771
+fs.fs_base.P115FileSystemBase.dictdir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1828
+fs.fs_base.P115FileSystemBase.dictdir_path		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1873
+fs.fs_base.P115FileSystemBase.dirlen		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1919
+fs.fs_base.P115FileSystemBase.download		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1970
+fs.fs_base.P115FileSystemBase.ed2k		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L2055
+fs.fs_base.P115FileSystemBase.exists		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L2111
+fs.fs_base.P115FileSystemBase.get_ancestors		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L2454
+fs.fs_base.P115FileSystemBase.get_attr		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L2382
+fs.fs_base.P115FileSystemBase.get_id		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L2600
+fs.fs_base.P115FileSystemBase.get_parent_id		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L2689
+fs.fs_base.P115FileSystemBase.get_path		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L2756
+fs.fs_base.P115FileSystemBase.get_patht		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L2801
+fs.fs_base.P115FileSystemBase.get_url		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L3127
+fs.fs_base.P115FileSystemBase.getcid		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L2135
+fs.fs_base.P115FileSystemBase.getcwd		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L2158
+fs.fs_base.P115FileSystemBase.glob		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L2902
+fs.fs_base.P115FileSystemBase.has_child		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L3177
+fs.fs_base.P115FileSystemBase.hash		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L3243
+fs.fs_base.P115FileSystemBase.hashes		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L3312
+fs.fs_base.P115FileSystemBase.is_empty		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L3375
+fs.fs_base.P115FileSystemBase.isdir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L3433
+fs.fs_base.P115FileSystemBase.isfile		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L3478
+fs.fs_base.P115FileSystemBase.iter		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L3535
+fs.fs_base.P115FileSystemBase.iterdir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1665
+fs.fs_base.P115FileSystemBase.listdir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L3606
+fs.fs_base.P115FileSystemBase.listdir_path		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L3651
+fs.fs_base.P115FileSystemBase.open		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L3834
+fs.fs_base.P115FileSystemBase.read		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L3909
+fs.fs_base.P115FileSystemBase.read_block		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L4052
+fs.fs_base.P115FileSystemBase.read_range		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L3992
+fs.fs_base.P115FileSystemBase.read_text		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L4116
+fs.fs_base.P115FileSystemBase.readdir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L3697
+fs.fs_base.P115FileSystemBase.rglob		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L4174
+fs.fs_base.P115FileSystemBase.stat		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L4235
+fs.fs_base.P115FileSystemBase.user_id		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1641
+fs.fs_base.P115FileSystemBase.walk		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L4289
+fs.fs_base.P115PathBase.ancestors		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L146
+fs.fs_base.P115PathBase.download		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L237
+fs.fs_base.P115PathBase.exists		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L276
+fs.fs_base.P115PathBase.get_ancestors		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L350
+fs.fs_base.P115PathBase.get_attr		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L311
+fs.fs_base.P115PathBase.get_length		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L385
+fs.fs_base.P115PathBase.get_parent		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L430
+fs.fs_base.P115PathBase.get_parents		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L468
+fs.fs_base.P115PathBase.get_path		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L507
+fs.fs_base.P115PathBase.get_patht		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L542
+fs.fs_base.P115PathBase.get_url		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L577
+fs.fs_base.P115PathBase.glob		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L618
+fs.fs_base.P115PathBase.has_child		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L661
+fs.fs_base.P115PathBase.hash		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L702
+fs.fs_base.P115PathBase.hashes		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L745
+fs.fs_base.P115PathBase.id		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L140
+fs.fs_base.P115PathBase.inode		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L765
+fs.fs_base.P115PathBase.is_absolute		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L768
+fs.fs_base.P115PathBase.is_dir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L787
+fs.fs_base.P115PathBase.is_empty		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L822
+fs.fs_base.P115PathBase.is_file		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L853
+fs.fs_base.P115PathBase.is_symlink		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L864
+fs.fs_base.P115PathBase.isdir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L885
+fs.fs_base.P115PathBase.isfile		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L916
+fs.fs_base.P115PathBase.iter		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L959
+fs.fs_base.P115PathBase.iterdir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1004
+fs.fs_base.P115PathBase.join		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1044
+fs.fs_base.P115PathBase.joinpath		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1079
+fs.fs_base.P115PathBase.match		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1131
+fs.fs_base.P115PathBase.media_type		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L152
+fs.fs_base.P115PathBase.open		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1233
+fs.fs_base.P115PathBase.parent		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L160
+fs.fs_base.P115PathBase.parents		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L166
+fs.fs_base.P115PathBase.parts		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L172
+fs.fs_base.P115PathBase.path		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L178
+fs.fs_base.P115PathBase.patht		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L184
+fs.fs_base.P115PathBase.read		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1286
+fs.fs_base.P115PathBase.read_block		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1360
+fs.fs_base.P115PathBase.read_range		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1323
+fs.fs_base.P115PathBase.read_text		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1401
+fs.fs_base.P115PathBase.rglob		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1446
+fs.fs_base.P115PathBase.root		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L190
+fs.fs_base.P115PathBase.stat		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1483
+fs.fs_base.P115PathBase.stem		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L196
+fs.fs_base.P115PathBase.suffix		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L202
+fs.fs_base.P115PathBase.suffixes		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L208
+fs.fs_base.P115PathBase.walk		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1519
+fs.fs_base.P115PathBase.with_name		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1552
+fs.fs_base.P115PathBase.with_stem		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1556
+fs.fs_base.P115PathBase.with_suffix		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1559
+fs.fs_base.P115PathBase.wrap_path_iter		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_base.py#L1576
+fs.fs_share.P115ShareFileSystem.create_time		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_share.py#L102
+fs.fs_share.P115ShareFileSystem.create_timestamp		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_share.py#L107
+fs.fs_share.P115ShareFileSystem.from_url		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_share.py#L86
+fs.fs_share.P115ShareFileSystem.get_share_data		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_share.py#L147
+fs.fs_share.P115ShareFileSystem.get_url		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_share.py#L190
+fs.fs_share.P115ShareFileSystem.iterdir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_share.py#L238
+fs.fs_share.P115ShareFileSystem.path_class		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_share.py#L70
+fs.fs_share.P115ShareFileSystem.receive		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_share.py#L278
+fs.fs_share.P115ShareFileSystem.share_data		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_share.py#L122
+fs.fs_share.P115ShareFileSystem.share_info		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_share.py#L127
+fs.fs_share.P115ShareFileSystem.share_user_id		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_share.py#L117
+fs.fs_share.P115ShareFileSystem.snap_id		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_share.py#L112
+fs.fs_share.P115SharePath.receive		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_share.py#L49
+fs.fs_zip.P115ZipFileSystem.extract		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_zip.py#L144
+fs.fs_zip.P115ZipFileSystem.extract_many		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_zip.py#L208
+fs.fs_zip.P115ZipFileSystem.get_url		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_zip.py#L266
+fs.fs_zip.P115ZipFileSystem.id_to_path		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_zip.py#L70
+fs.fs_zip.P115ZipFileSystem.iterdir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_zip.py#L315
+fs.fs_zip.P115ZipFileSystem.load		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_zip.py#L420
+fs.fs_zip.P115ZipFileSystem.path_class		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_zip.py#L36
+fs.fs_zip.P115ZipFileSystem.path_to_id		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_zip.py#L104
+fs.fs_zip.P115ZipFileSystem.readdir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/fs/fs_zip.py#L377
+tool.attr.dir_getid		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L2512
+tool.attr.get_ancestors		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L935
+tool.attr.get_attr		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L711
+tool.attr.get_dir_count		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L2441
+tool.attr.get_file_count		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L2357
+tool.attr.get_id		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L1270
+tool.attr.get_id_to_name		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L1756
+tool.attr.get_id_to_path		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L1466
+tool.attr.get_id_to_sha1		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L1663
+tool.attr.get_info		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L848
+tool.attr.get_parent_id		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L1848
+tool.attr.get_path		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L1150
+tool.attr.get_pickcode_stable_point		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L2576
+tool.attr.normalize_attr		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L600
+tool.attr.normalize_attr_app		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L341
+tool.attr.normalize_attr_app2		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L454
+tool.attr.normalize_attr_simple		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L625
+tool.attr.normalize_attr_web		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L199
+tool.attr.share_get_id		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L1936
+tool.attr.share_get_id_to_name		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L2261
+tool.attr.share_get_id_to_path		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L2098
+tool.attr.type_of_attr		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/attr.py#L650
+tool.auth.open_app_check		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/auth.py#L83
+tool.auth.open_app_name		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/auth.py#L132
+tool.auth.open_deauth		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/auth.py#L34
+tool.clouddownload.clouddownload_iter		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/clouddownload.py#L53
+tool.clouddownload.clouddownload_restart_iter		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/clouddownload.py#L167
+tool.download.download_file		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/download.py#L996
+tool.download.get_pic_url		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/download.py#L286
+tool.download.get_remaining_open_count		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/download.py#L908
+tool.download.get_url		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/download.py#L99
+tool.download.iter_download_nodes		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/download.py#L647
+tool.download.iter_subtitles		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/download.py#L494
+tool.download.iter_urls		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/download.py#L389
+tool.edit.batch_copy		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L1196
+tool.edit.batch_copy_files		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L1272
+tool.edit.batch_delete		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L1389
+tool.edit.batch_delete_files		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L1458
+tool.edit.batch_hide		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L1905
+tool.edit.batch_label		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L1971
+tool.edit.batch_makedir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L1092
+tool.edit.batch_move		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L1566
+tool.edit.batch_move_files		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L1643
+tool.edit.batch_recyclebin_clean		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L1765
+tool.edit.batch_recyclebin_revert		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L1838
+tool.edit.batch_unstar		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L723
+tool.edit.copyfile		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L2046
+tool.edit.iter_batch_makedir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L994
+tool.edit.makedir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L909
+tool.edit.post_event		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L839
+tool.edit.renamefile		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L2166
+tool.edit.transferfile		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L2304
+tool.edit.update_abstract		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L66
+tool.edit.update_category_shortcut		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L593
+tool.edit.update_cover		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L129
+tool.edit.update_desc		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L197
+tool.edit.update_label		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L265
+tool.edit.update_name		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L650
+tool.edit.update_score		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L474
+tool.edit.update_show_play_long		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L333
+tool.edit.update_star		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L401
+tool.edit.update_top		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/edit.py#L533
+tool.export_dir.export_dir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/export_dir.py#L735
+tool.export_dir.export_dir_parse_iter		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/export_dir.py#L617
+tool.export_dir.export_dir_parse_iter_depth_name		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/export_dir.py#L198
+tool.export_dir.export_dir_parse_iter_dict		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/export_dir.py#L220
+tool.export_dir.export_dir_parse_iter_path		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/export_dir.py#L277
+tool.export_dir.export_dir_parse_iter_patht		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/export_dir.py#L335
+tool.export_dir.export_dir_result		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/export_dir.py#L525
+tool.export_dir.export_dir_start		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/export_dir.py#L386
+tool.export_dir.export_dir_status		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/export_dir.py#L454
+tool.extract.extract_file		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/extract.py#L306
+tool.extract.extract_iterdir_raw		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/extract.py#L230
+tool.extract.extract_progress		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/extract.py#L370
+tool.extract.extract_push		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/extract.py#L42
+tool.extract.extract_push_progress		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/extract.py#L160
+tool.fs_files.fs_files		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/fs_files.py#L60
+tool.fs_files.fs_files_iter		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/fs_files.py#L173
+tool.history.iter_history		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/history.py#L184
+tool.history.iter_history_list		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/history.py#L297
+tool.history.iter_history_once		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/history.py#L65
+tool.iter_nodes.iter_nodes		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iter_nodes.py#L85
+tool.iter_nodes.iter_nodes_by_event		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iter_nodes.py#L606
+tool.iter_nodes.iter_nodes_by_file		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iter_nodes.py#L276
+tool.iter_nodes.iter_nodes_by_file_skim		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iter_nodes.py#L342
+tool.iter_nodes.iter_nodes_by_info		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iter_nodes.py#L407
+tool.iter_nodes.iter_nodes_by_label		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iter_nodes.py#L707
+tool.iter_nodes.iter_nodes_by_star		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iter_nodes.py#L892
+tool.iter_nodes.iter_nodes_by_supervision		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iter_nodes.py#L478
+tool.iter_nodes.iter_nodes_by_update		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iter_nodes.py#L542
+tool.iterdir.ensure_path		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iterdir.py#L226
+tool.iterdir.extract_iter_files		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iterdir.py#L1855
+tool.iterdir.extract_iterdir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iterdir.py#L1768
+tool.iterdir.get_id_to_dirnode		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iterdir.py#L48
+tool.iterdir.iter_3_ancestor_names		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iterdir.py#L1953
+tool.iterdir.iter_dirs		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iterdir.py#L694
+tool.iterdir.iter_files		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iterdir.py#L827
+tool.iterdir.iter_files_skim		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iterdir.py#L993
+tool.iterdir.iter_keyed_dupfiles		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iterdir.py#L2156
+tool.iterdir.iter_keyed_ids		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iterdir.py#L2067
+tool.iterdir.iterdir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iterdir.py#L440
+tool.iterdir.iterdir_skim		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iterdir.py#L589
+tool.iterdir.search_iter		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iterdir.py#L1228
+tool.iterdir.share_iter_files		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iterdir.py#L1498
+tool.iterdir.share_iterdir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iterdir.py#L1359
+tool.iterdir.share_search_iter		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iterdir.py#L1644
+tool.iterdir.traverse_tree		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/iterdir.py#L1094
+tool.life.iter_life_behavior		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/life.py#L370
+tool.life.iter_life_behavior_list		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/life.py#L485
+tool.life.iter_life_behavior_once		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/life.py#L233
+tool.life.iter_life_list		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/life.py#L114
+tool.life.life_show		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/life.py#L75
+tool.querydb.P115QueryDB.get_ancestors		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L30
+tool.querydb.P115QueryDB.get_attr		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L64
+tool.querydb.P115QueryDB.get_count_tree		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L94
+tool.querydb.P115QueryDB.get_id		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L126
+tool.querydb.P115QueryDB.get_parent_id		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L174
+tool.querydb.P115QueryDB.get_path		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L197
+tool.querydb.P115QueryDB.get_patht		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L214
+tool.querydb.P115QueryDB.get_pickcode		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L231
+tool.querydb.P115QueryDB.get_sha1		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L278
+tool.querydb.P115QueryDB.has_id		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L325
+tool.querydb.P115QueryDB.is_alive		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L353
+tool.querydb.P115QueryDB.iter_children		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L400
+tool.querydb.P115QueryDB.iter_count_dir		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L446
+tool.querydb.P115QueryDB.iter_count_tree		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L485
+tool.querydb.P115QueryDB.iter_dangling_ids		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L524
+tool.querydb.P115QueryDB.iter_dangling_parent_ids		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L553
+tool.querydb.P115QueryDB.iter_descendants		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L608
+tool.querydb.P115QueryDB.iter_descendants_bfs		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L838
+tool.querydb.P115QueryDB.iter_dup_files		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L974
+tool.querydb.P115QueryDB.iter_existing_id		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L1002
+tool.querydb.P115QueryDB.iter_id_to_parent_id		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L1026
+tool.querydb.P115QueryDB.iter_id_to_path		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L1057
+tool.querydb.P115QueryDB.iter_parent_id		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L1112
+tool.querydb.P115QueryDB.path_to_id		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L367
+tool.querydb.P115QueryDB.select_na_ids		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/querydb.py#L1132
+tool.tinydb.tinydb_initdb		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/tinydb.py#L28
+tool.tinydb.tinydb_update		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/tinydb.py#L88
+tool.tinydb.tinydb_update_event		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/tinydb.py#L170
+tool.updatedb.updatedb		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/updatedb.py#L325
+tool.updatedb.updatedb_event_iter		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/updatedb.py#L461
+tool.updatedb.updatedb_initdb		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/updatedb.py#L77
+tool.upload.P115MultipartUpload.complete		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/upload.py#L1196
+tool.upload.P115MultipartUpload.completed		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/upload.py#L1162
+tool.upload.P115MultipartUpload.from_path		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/upload.py#L1071
+tool.upload.P115MultipartUpload.iter_upload		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/upload.py#L1349
+tool.upload.P115MultipartUpload.iter_upload_url		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/upload.py#L1433
+tool.upload.P115MultipartUpload.list_parts		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/upload.py#L1245
+tool.upload.P115MultipartUpload.result		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/upload.py#L1167
+tool.upload.P115MultipartUpload.succeeded		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/upload.py#L1172
+tool.upload.P115MultipartUpload.upload_url		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/upload.py#L1292
+tool.upload.iter_115_to_115		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/upload.py#L178
+tool.upload.iter_115_to_115_resume		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/upload.py#L352
+tool.upload.iter_download_upload		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/upload.py#L706
+tool.upload.sha1_for_check_existence		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/upload.py#L589
+tool.upload.upload_for_check_existence		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/upload.py#L635
+tool.upload.upload_host_image		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/upload.py#L74
+tool.upload.upload_init		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/upload.py#L860
+tool.xys.wish_adopt		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/xys.py#L200
+tool.xys.wish_aid_iter		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/xys.py#L358
+tool.xys.wish_answer		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/xys.py#L140
+tool.xys.wish_del		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/xys.py#L247
+tool.xys.wish_info		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/xys.py#L38
+tool.xys.wish_iter		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/xys.py#L294
+tool.xys.wish_make		未交付 · 需组合、句柄或独立组件适配	https://github.com/ChenyangGao/p115client/blob/856e4f8f09ce034534bd458f06d3dee4474a1698/p115client/tool/xys.py#L87

@@ -1,0 +1,17 @@
+{
+  "frame": {
+    "entry": "ctx.components.call(\"ffmpeg\",\"frame\",args)",
+    "input": {
+      "path": "NAS 视频文件绝对路径"
+    },
+    "output": {
+      "mime": "image/jpeg",
+      "base64": "预览帧"
+    },
+    "example": {
+      "path": "/media/trailer.mp4"
+    },
+    "permission": "ffmpeg/frame@1",
+    "fileRead": true
+  }
+}

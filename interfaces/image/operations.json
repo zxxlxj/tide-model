@@ -1,0 +1,33 @@
+{
+  "info": {
+    "entry": "ctx.components.call(\"image\",\"info\",args)",
+    "input": {
+      "path": "NAS 图片绝对路径"
+    },
+    "output": {
+      "width": "像素",
+      "height": "像素",
+      "format": "格式"
+    },
+    "example": {
+      "path": "/photos/cover.jpg"
+    },
+    "permission": "image/info@1",
+    "fileRead": true
+  },
+  "thumbnail": {
+    "entry": "ctx.components.call(\"image\",\"thumbnail\",args)",
+    "input": {
+      "path": "NAS 图片绝对路径"
+    },
+    "output": {
+      "mime": "image/png",
+      "base64": "最长边 192 像素的缩略图"
+    },
+    "example": {
+      "path": "/photos/cover.jpg"
+    },
+    "permission": "image/thumbnail@1",
+    "fileRead": true
+  }
+}

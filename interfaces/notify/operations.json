@@ -1,0 +1,10 @@
+{
+  "send": {
+    "entry": "ctx.notify.send(message)",
+    "permission": "notify/<channel>@1",
+    "input": {"channel":"管理员配置的渠道 ID，必填","type":"text | link | image，默认 text","style":"plain | markdown | html，默认 plain。html 仅 Telegram，Telegram markdown 使用 MarkdownV2","text":"消息正文、卡片说明或图片说明","title":"链接按钮或图文标题","url":"链接地址或 Telegram 图片 HTTPS 地址","imageBase64":"企业微信自建应用图片的标准 Base64，原图最多 96 KiB"},
+    "output": {"sent":"布尔值，上游确认接收","channel":"使用的渠道 ID","partial":"可选，部分企微成员不可达"},
+    "example": {"args":{"channel":"ops","type":"text","style":"plain","text":"归档完成"},"result":{"sent":true,"channel":"ops"}},
+    "errors":["缺少渠道权限","渠道停用或不存在","达到渠道限额","服务未确认送达"]
+  }
+}

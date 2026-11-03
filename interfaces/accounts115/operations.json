@@ -1,0 +1,1453 @@
+{
+  "list": {
+    "summary": "列出账号连接",
+    "input": {
+      "type": [
+        "object"
+      ],
+      "description": "调用参数",
+      "properties": {
+        "offset": {
+          "type": [
+            "integer"
+          ],
+          "description": "行偏移，默认 0"
+        },
+        "limit": {
+          "type": [
+            "integer"
+          ],
+          "description": "1–100，默认 100"
+        }
+      },
+      "required": []
+    },
+    "output": {
+      "type": [
+        "array"
+      ],
+      "description": "按 UID、连接方式排序",
+      "items": {
+        "type": [
+          "object"
+        ],
+        "description": "一条连接的公开信息",
+        "properties": {
+          "uuid": {
+            "type": [
+              "string"
+            ],
+            "description": "来自 115 的数字账号 UID，以字符串表示"
+          },
+          "kind": {
+            "type": [
+              "string"
+            ],
+            "description": "连接方式",
+            "enum": [
+              "cookie",
+              "bearer"
+            ]
+          },
+          "label": {
+            "type": [
+              "string"
+            ],
+            "description": "显示名称"
+          },
+          "note": {
+            "type": [
+              "string"
+            ],
+            "description": "账号备注"
+          },
+          "updated": {
+            "type": [
+              "integer"
+            ],
+            "description": "Unix 毫秒"
+          },
+          "client": {
+            "type": [
+              "string"
+            ],
+            "description": "CK 的设备标识或 Open 的 AppID，手动填写可留空"
+          },
+          "profile": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "description": "账号资料快照；尚未同步时为 null",
+            "properties": {
+              "nickname": {
+                "type": [
+                  "string"
+                ],
+                "description": "115 昵称，与本地备注名独立"
+              },
+              "avatarUrl": {
+                "type": [
+                  "string"
+                ],
+                "description": "官方头像地址，可通过 avatar 读取本地缩略图"
+              },
+              "hasAvatar": {
+                "type": [
+                  "boolean"
+                ],
+                "description": "已缓存有效头像"
+              },
+              "vip": {
+                "type": [
+                  "object"
+                ],
+                "description": "会员资料",
+                "properties": {
+                  "active": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ],
+                    "description": "当前会员状态，未知为 null"
+                  },
+                  "level": {
+                    "type": [
+                      "string"
+                    ],
+                    "description": "上游返回的会员等级名称"
+                  },
+                  "permanent": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ],
+                    "description": "长期会员标记"
+                  },
+                  "expiresAt": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "description": "会员到期 Unix 毫秒"
+                  },
+                  "expiresOn": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "115 显示的会员到期日 YYYY-MM-DD，优先用于界面展示"
+                  }
+                }
+              },
+              "accountRank": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "115 账号等级"
+              },
+              "space": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "description": "上次成功取得的空间数据",
+                "properties": {
+                  "total": {
+                    "type": [
+                      "string"
+                    ],
+                    "description": "总字节数，十进制字符串"
+                  },
+                  "used": {
+                    "type": [
+                      "string"
+                    ],
+                    "description": "已用字节数"
+                  },
+                  "free": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "剩余字节数"
+                  },
+                  "syncedAt": {
+                    "type": [
+                      "integer"
+                    ],
+                    "description": "Unix 毫秒"
+                  }
+                }
+              },
+              "syncedAt": {
+                "type": [
+                  "integer"
+                ],
+                "description": "Unix 毫秒"
+              },
+              "issues": {
+                "type": [
+                  "array"
+                ],
+                "description": "本次未取得的项目",
+                "items": {
+                  "type": [
+                    "string"
+                  ],
+                  "description": "空间或头像",
+                  "enum": [
+                    "space",
+                    "avatar"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "required": []
+      }
+    },
+    "example": {
+      "args": {},
+      "result": [
+        {
+          "uuid": "12345",
+          "kind": "cookie",
+          "label": "主账号",
+          "note": "",
+          "updated": 1
+        }
+      ]
+    }
+  },
+  "configure": {
+    "summary": "校验并保存或替换凭据",
+    "input": {
+      "type": [
+        "object"
+      ],
+      "description": "调用参数",
+      "properties": {
+        "uuid": {
+          "type": [
+            "string"
+          ],
+          "description": "来自 115 的数字账号 UID，以字符串表示"
+        },
+        "kind": {
+          "type": [
+            "string"
+          ],
+          "description": "连接方式",
+          "enum": [
+            "cookie",
+            "bearer"
+          ]
+        },
+        "label": {
+          "type": [
+            "string"
+          ],
+          "description": "显示名称"
+        },
+        "note": {
+          "type": [
+            "string"
+          ],
+          "description": "账号备注"
+        },
+        "value": {
+          "type": [
+            "string"
+          ],
+          "description": "CK 或 Open access_token，仅输入"
+        },
+        "refreshToken": {
+          "type": [
+            "string"
+          ],
+          "description": "可选 Open refresh_token"
+        },
+        "expires": {
+          "type": [
+            "integer"
+          ],
+          "description": "Open 访问令牌到期的 Unix 毫秒，0 表示未知"
+        },
+        "client": {
+          "type": [
+            "string"
+          ],
+          "description": "CK 的设备标识或 Open 的 AppID，手动填写可留空"
+        },
+        "createOnly": {
+          "type": [
+            "boolean"
+          ],
+          "description": "为 true 时拒绝覆盖已有连接"
+        }
+      },
+      "required": [
+        "kind",
+        "value"
+      ]
+    },
+    "output": {
+      "type": [
+        "object"
+      ],
+      "description": "一条连接的公开信息",
+      "properties": {
+        "uuid": {
+          "type": [
+            "string"
+          ],
+          "description": "来自 115 的数字账号 UID，以字符串表示"
+        },
+        "kind": {
+          "type": [
+            "string"
+          ],
+          "description": "连接方式",
+          "enum": [
+            "cookie",
+            "bearer"
+          ]
+        },
+        "label": {
+          "type": [
+            "string"
+          ],
+          "description": "显示名称"
+        },
+        "note": {
+          "type": [
+            "string"
+          ],
+          "description": "账号备注"
+        },
+        "updated": {
+          "type": [
+            "integer"
+          ],
+          "description": "Unix 毫秒"
+        },
+        "client": {
+          "type": [
+            "string"
+          ],
+          "description": "CK 的设备标识或 Open 的 AppID，手动填写可留空"
+        },
+        "profile": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "description": "账号资料快照；尚未同步时为 null",
+          "properties": {
+            "nickname": {
+              "type": [
+                "string"
+              ],
+              "description": "115 昵称，与本地备注名独立"
+            },
+            "avatarUrl": {
+              "type": [
+                "string"
+              ],
+              "description": "官方头像地址，可通过 avatar 读取本地缩略图"
+            },
+            "hasAvatar": {
+              "type": [
+                "boolean"
+              ],
+              "description": "已缓存有效头像"
+            },
+            "vip": {
+              "type": [
+                "object"
+              ],
+              "description": "会员资料",
+              "properties": {
+                "active": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": "当前会员状态，未知为 null"
+                },
+                "level": {
+                  "type": [
+                    "string"
+                  ],
+                  "description": "上游返回的会员等级名称"
+                },
+                "permanent": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": "长期会员标记"
+                },
+                "expiresAt": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "会员到期 Unix 毫秒"
+                },
+                "expiresOn": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "115 显示的会员到期日 YYYY-MM-DD，优先用于界面展示"
+                }
+              }
+            },
+            "accountRank": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "115 账号等级"
+            },
+            "space": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "description": "上次成功取得的空间数据",
+              "properties": {
+                "total": {
+                  "type": [
+                    "string"
+                  ],
+                  "description": "总字节数，十进制字符串"
+                },
+                "used": {
+                  "type": [
+                    "string"
+                  ],
+                  "description": "已用字节数"
+                },
+                "free": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "剩余字节数"
+                },
+                "syncedAt": {
+                  "type": [
+                    "integer"
+                  ],
+                  "description": "Unix 毫秒"
+                }
+              }
+            },
+            "syncedAt": {
+              "type": [
+                "integer"
+              ],
+              "description": "Unix 毫秒"
+            },
+            "issues": {
+              "type": [
+                "array"
+              ],
+              "description": "本次未取得的项目",
+              "items": {
+                "type": [
+                  "string"
+                ],
+                "description": "空间或头像",
+                "enum": [
+                  "space",
+                  "avatar"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "required": []
+    },
+    "example": {
+      "args": {
+        "kind": "cookie",
+        "value": "UID=12345_demo; CID=example"
+      },
+      "result": {
+        "uuid": "12345",
+        "kind": "cookie",
+        "label": "主账号",
+        "note": "",
+        "updated": 1
+      }
+    }
+  },
+  "edit": {
+    "summary": "保存名称和备注",
+    "input": {
+      "type": [
+        "object"
+      ],
+      "description": "调用参数",
+      "properties": {
+        "uuid": {
+          "type": [
+            "string"
+          ],
+          "description": "来自 115 的数字账号 UID，以字符串表示"
+        },
+        "kind": {
+          "type": [
+            "string"
+          ],
+          "description": "连接方式",
+          "enum": [
+            "cookie",
+            "bearer"
+          ]
+        },
+        "label": {
+          "type": [
+            "string"
+          ],
+          "description": "显示名称"
+        },
+        "note": {
+          "type": [
+            "string"
+          ],
+          "description": "账号备注"
+        }
+      },
+      "required": [
+        "uuid",
+        "kind"
+      ]
+    },
+    "output": {
+      "type": [
+        "object"
+      ],
+      "description": "结果",
+      "properties": {
+        "saved": {
+          "type": [
+            "boolean"
+          ],
+          "description": "保存成功"
+        }
+      },
+      "required": []
+    },
+    "example": {
+      "args": {
+        "uuid": "12345",
+        "kind": "cookie"
+      },
+      "result": {
+        "saved": true
+      }
+    }
+  },
+  "refresh": {
+    "summary": "刷新 Open 访问令牌",
+    "input": {
+      "type": [
+        "object"
+      ],
+      "description": "调用参数",
+      "properties": {
+        "uuid": {
+          "type": [
+            "string"
+          ],
+          "description": "来自 115 的数字账号 UID，以字符串表示"
+        }
+      },
+      "required": [
+        "uuid"
+      ]
+    },
+    "output": {
+      "type": [
+        "object"
+      ],
+      "description": "结果",
+      "properties": {
+        "saved": {
+          "type": [
+            "boolean"
+          ],
+          "description": "保存成功"
+        }
+      },
+      "required": []
+    },
+    "example": {
+      "args": {
+        "uuid": "12345"
+      },
+      "result": {
+        "saved": true
+      }
+    }
+  },
+  "remove": {
+    "summary": "删除此连接",
+    "input": {
+      "type": [
+        "object"
+      ],
+      "description": "调用参数",
+      "properties": {
+        "uuid": {
+          "type": [
+            "string"
+          ],
+          "description": "来自 115 的数字账号 UID，以字符串表示"
+        },
+        "kind": {
+          "type": [
+            "string"
+          ],
+          "description": "连接方式",
+          "enum": [
+            "cookie",
+            "bearer"
+          ]
+        }
+      },
+      "required": [
+        "uuid",
+        "kind"
+      ]
+    },
+    "output": {
+      "type": [
+        "object"
+      ],
+      "description": "结果",
+      "properties": {
+        "removed": {
+          "type": [
+            "boolean"
+          ],
+          "description": "是否删除"
+        }
+      },
+      "required": []
+    },
+    "example": {
+      "args": {
+        "uuid": "12345",
+        "kind": "cookie"
+      },
+      "result": {
+        "removed": true
+      }
+    }
+  },
+  "acquire": {
+    "summary": "取得当前调用专用的连接凭据句柄",
+    "input": {
+      "type": [
+        "object"
+      ],
+      "description": "调用参数",
+      "properties": {
+        "uuid": {
+          "type": [
+            "string"
+          ],
+          "description": "来自 115 的数字账号 UID，以字符串表示"
+        },
+        "kind": {
+          "type": [
+            "string"
+          ],
+          "description": "连接方式",
+          "enum": [
+            "cookie",
+            "bearer"
+          ]
+        }
+      },
+      "required": [
+        "uuid",
+        "kind"
+      ]
+    },
+    "output": {
+      "type": [
+        "object"
+      ],
+      "description": "直接传给连接器的账号及凭据",
+      "properties": {
+        "uuid": {
+          "type": [
+            "string"
+          ],
+          "description": "来自 115 的数字账号 UID，以字符串表示"
+        },
+        "credential": {
+          "type": [
+            "object"
+          ],
+          "description": "短期凭据",
+          "properties": {
+            "kind": {
+              "type": [
+                "string"
+              ],
+              "description": "连接方式",
+              "enum": [
+                "cookie",
+                "bearer"
+              ]
+            },
+            "handle": {
+              "type": [
+                "string"
+              ],
+              "description": "仅限当前调用者操作期间使用"
+            }
+          },
+          "required": []
+        }
+      },
+      "required": []
+    },
+    "example": {
+      "args": {
+        "uuid": "12345",
+        "kind": "cookie"
+      },
+      "result": {
+        "uuid": "12345",
+        "credential": {
+          "kind": "cookie",
+          "handle": "sample"
+        }
+      }
+    }
+  },
+  "begin": {
+    "summary": "申请扫码登录",
+    "input": {
+      "type": [
+        "object"
+      ],
+      "description": "调用参数",
+      "properties": {
+        "uuid": {
+          "type": [
+            "string"
+          ],
+          "description": "来自 115 的数字账号 UID，以字符串表示"
+        },
+        "kind": {
+          "type": [
+            "string"
+          ],
+          "description": "连接方式",
+          "enum": [
+            "cookie",
+            "bearer"
+          ]
+        },
+        "appId": {
+          "type": [
+            "string"
+          ],
+          "description": "Open 扫码必填，开发者 AppID"
+        },
+        "app": {
+          "type": [
+            "string"
+          ],
+          "description": "CK 登录设备，默认 alipaymini",
+          "enum": [
+            "alipaymini",
+            "wechatmini",
+            "ios",
+            "bios",
+            "115ios",
+            "android",
+            "bandroid",
+            "115android",
+            "harmony",
+            "ipad",
+            "bipad",
+            "115ipad",
+            "qios",
+            "qipad",
+            "qandroid",
+            "web",
+            "desktop",
+            "windows",
+            "os_windows",
+            "mac",
+            "os_mac",
+            "linux",
+            "os_linux",
+            "tv",
+            "apple_tv"
+          ]
+        }
+      },
+      "required": [
+        "kind"
+      ]
+    },
+    "output": {
+      "type": [
+        "object"
+      ],
+      "description": "扫码会话",
+      "properties": {
+        "ticket": {
+          "type": [
+            "string"
+          ],
+          "description": "加密会话，传给 poll"
+        },
+        "qr": {
+          "type": [
+            "string"
+          ],
+          "description": "用 115 App 扫描的二维码内容"
+        },
+        "expires": {
+          "type": [
+            "integer"
+          ],
+          "description": "过期 Unix 毫秒"
+        },
+        "client": {
+          "type": [
+            "string"
+          ],
+          "description": "CK 的设备标识或 Open 的 AppID，手动填写可留空"
+        }
+      },
+      "required": []
+    },
+    "example": {
+      "args": {
+        "kind": "cookie"
+      },
+      "result": {
+        "ticket": "sample",
+        "qr": "https://115.com/scan/dg-example",
+        "expires": 1
+      }
+    }
+  },
+  "poll": {
+    "summary": "查询手机扫码和确认状态",
+    "input": {
+      "type": [
+        "object"
+      ],
+      "description": "调用参数",
+      "properties": {
+        "ticket": {
+          "type": [
+            "string"
+          ],
+          "description": "begin 返回的会话"
+        }
+      },
+      "required": [
+        "ticket"
+      ]
+    },
+    "output": {
+      "type": [
+        "object"
+      ],
+      "description": "扫码状态",
+      "properties": {
+        "status": {
+          "type": [
+            "string"
+          ],
+          "description": "扫码状态",
+          "enum": [
+            "waiting",
+            "scanned",
+            "confirmed",
+            "expired",
+            "cancelled"
+          ]
+        }
+      },
+      "required": []
+    },
+    "example": {
+      "args": {
+        "ticket": "sample"
+      },
+      "result": {
+        "status": "confirmed"
+      }
+    }
+  },
+  "exchange": {
+    "summary": "将已确认的授权换成表单凭据",
+    "input": {
+      "type": [
+        "object"
+      ],
+      "description": "调用参数",
+      "properties": {
+        "ticket": {
+          "type": [
+            "string"
+          ],
+          "description": "begin 返回的会话"
+        }
+      },
+      "required": [
+        "ticket"
+      ]
+    },
+    "output": {
+      "type": [
+        "object"
+      ],
+      "description": "仅返回给管理员的凭据，可修改后传给 configure",
+      "properties": {
+        "value": {
+          "type": [
+            "string"
+          ],
+          "description": "CK 或 access_token"
+        },
+        "refreshToken": {
+          "type": [
+            "string"
+          ],
+          "description": "可选刷新令牌"
+        },
+        "expires": {
+          "type": [
+            "integer"
+          ],
+          "description": "Open 访问令牌到期的 Unix 毫秒，0 表示未知"
+        },
+        "client": {
+          "type": [
+            "string"
+          ],
+          "description": "CK 的设备标识或 Open 的 AppID，手动填写可留空"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "example": {
+      "args": {
+        "ticket": "sample"
+      },
+      "result": {
+        "value": "example-token",
+        "refreshToken": "",
+        "expires": 0
+      }
+    }
+  },
+  "reveal": {
+    "summary": "管理员查看已保存的凭据",
+    "input": {
+      "type": [
+        "object"
+      ],
+      "description": "调用参数",
+      "properties": {
+        "uuid": {
+          "type": [
+            "string"
+          ],
+          "description": "来自 115 的数字账号 UID，以字符串表示"
+        },
+        "kind": {
+          "type": [
+            "string"
+          ],
+          "description": "连接方式",
+          "enum": [
+            "cookie",
+            "bearer"
+          ]
+        }
+      },
+      "required": [
+        "uuid",
+        "kind"
+      ]
+    },
+    "output": {
+      "type": [
+        "object"
+      ],
+      "description": "仅返回给管理员的凭据，可修改后传给 configure",
+      "properties": {
+        "value": {
+          "type": [
+            "string"
+          ],
+          "description": "CK 或 access_token"
+        },
+        "refreshToken": {
+          "type": [
+            "string"
+          ],
+          "description": "可选刷新令牌"
+        },
+        "expires": {
+          "type": [
+            "integer"
+          ],
+          "description": "Open 访问令牌到期的 Unix 毫秒，0 表示未知"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "example": {
+      "args": {
+        "uuid": "12345",
+        "kind": "cookie"
+      },
+      "result": {
+        "value": "example-token",
+        "refreshToken": "",
+        "expires": 0
+      }
+    }
+  },
+  "profile": {
+    "summary": "读取本地资料，不连接 115",
+    "input": {
+      "type": [
+        "object"
+      ],
+      "description": "调用参数",
+      "properties": {
+        "uuid": {
+          "type": [
+            "string"
+          ],
+          "description": "来自 115 的数字账号 UID，以字符串表示"
+        },
+        "kind": {
+          "type": [
+            "string"
+          ],
+          "description": "连接方式",
+          "enum": [
+            "cookie",
+            "bearer"
+          ]
+        }
+      },
+      "required": [
+        "uuid",
+        "kind"
+      ]
+    },
+    "output": {
+      "type": [
+        "object"
+      ],
+      "description": "资料快照",
+      "properties": {
+        "profile": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "description": "账号资料快照；尚未同步时为 null",
+          "properties": {
+            "nickname": {
+              "type": [
+                "string"
+              ],
+              "description": "115 昵称，与本地备注名独立"
+            },
+            "avatarUrl": {
+              "type": [
+                "string"
+              ],
+              "description": "官方头像地址，可通过 avatar 读取本地缩略图"
+            },
+            "hasAvatar": {
+              "type": [
+                "boolean"
+              ],
+              "description": "已缓存有效头像"
+            },
+            "vip": {
+              "type": [
+                "object"
+              ],
+              "description": "会员资料",
+              "properties": {
+                "active": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": "当前会员状态，未知为 null"
+                },
+                "level": {
+                  "type": [
+                    "string"
+                  ],
+                  "description": "上游返回的会员等级名称"
+                },
+                "permanent": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": "长期会员标记"
+                },
+                "expiresAt": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "会员到期 Unix 毫秒"
+                },
+                "expiresOn": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "115 显示的会员到期日 YYYY-MM-DD，优先用于界面展示"
+                }
+              }
+            },
+            "accountRank": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "115 账号等级"
+            },
+            "space": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "description": "上次成功取得的空间数据",
+              "properties": {
+                "total": {
+                  "type": [
+                    "string"
+                  ],
+                  "description": "总字节数，十进制字符串"
+                },
+                "used": {
+                  "type": [
+                    "string"
+                  ],
+                  "description": "已用字节数"
+                },
+                "free": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "剩余字节数"
+                },
+                "syncedAt": {
+                  "type": [
+                    "integer"
+                  ],
+                  "description": "Unix 毫秒"
+                }
+              }
+            },
+            "syncedAt": {
+              "type": [
+                "integer"
+              ],
+              "description": "Unix 毫秒"
+            },
+            "issues": {
+              "type": [
+                "array"
+              ],
+              "description": "本次未取得的项目",
+              "items": {
+                "type": [
+                  "string"
+                ],
+                "description": "空间或头像",
+                "enum": [
+                  "space",
+                  "avatar"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "example": {
+      "args": {
+        "uuid": "12345",
+        "kind": "cookie"
+      },
+      "result": {
+        "profile": null
+      }
+    }
+  },
+  "refresh-profile": {
+    "summary": "调用连接器更新资料，仅管理员直接调用",
+    "input": {
+      "type": [
+        "object"
+      ],
+      "description": "调用参数",
+      "properties": {
+        "uuid": {
+          "type": [
+            "string"
+          ],
+          "description": "来自 115 的数字账号 UID，以字符串表示"
+        },
+        "kind": {
+          "type": [
+            "string"
+          ],
+          "description": "连接方式",
+          "enum": [
+            "cookie",
+            "bearer"
+          ]
+        }
+      },
+      "required": [
+        "uuid",
+        "kind"
+      ]
+    },
+    "output": {
+      "type": [
+        "object"
+      ],
+      "description": "资料快照",
+      "properties": {
+        "profile": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "description": "账号资料快照；尚未同步时为 null",
+          "properties": {
+            "nickname": {
+              "type": [
+                "string"
+              ],
+              "description": "115 昵称，与本地备注名独立"
+            },
+            "avatarUrl": {
+              "type": [
+                "string"
+              ],
+              "description": "官方头像地址，可通过 avatar 读取本地缩略图"
+            },
+            "hasAvatar": {
+              "type": [
+                "boolean"
+              ],
+              "description": "已缓存有效头像"
+            },
+            "vip": {
+              "type": [
+                "object"
+              ],
+              "description": "会员资料",
+              "properties": {
+                "active": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": "当前会员状态，未知为 null"
+                },
+                "level": {
+                  "type": [
+                    "string"
+                  ],
+                  "description": "上游返回的会员等级名称"
+                },
+                "permanent": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": "长期会员标记"
+                },
+                "expiresAt": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "会员到期 Unix 毫秒"
+                },
+                "expiresOn": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "115 显示的会员到期日 YYYY-MM-DD，优先用于界面展示"
+                }
+              }
+            },
+            "accountRank": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "115 账号等级"
+            },
+            "space": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "description": "上次成功取得的空间数据",
+              "properties": {
+                "total": {
+                  "type": [
+                    "string"
+                  ],
+                  "description": "总字节数，十进制字符串"
+                },
+                "used": {
+                  "type": [
+                    "string"
+                  ],
+                  "description": "已用字节数"
+                },
+                "free": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "剩余字节数"
+                },
+                "syncedAt": {
+                  "type": [
+                    "integer"
+                  ],
+                  "description": "Unix 毫秒"
+                }
+              }
+            },
+            "syncedAt": {
+              "type": [
+                "integer"
+              ],
+              "description": "Unix 毫秒"
+            },
+            "issues": {
+              "type": [
+                "array"
+              ],
+              "description": "本次未取得的项目",
+              "items": {
+                "type": [
+                  "string"
+                ],
+                "description": "空间或头像",
+                "enum": [
+                  "space",
+                  "avatar"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "example": {
+      "args": {
+        "uuid": "12345",
+        "kind": "cookie"
+      },
+      "result": {
+        "profile": null
+      }
+    }
+  },
+  "avatar": {
+    "summary": "读取本地缩略图，不连接 115",
+    "input": {
+      "type": [
+        "object"
+      ],
+      "description": "调用参数",
+      "properties": {
+        "uuid": {
+          "type": [
+            "string"
+          ],
+          "description": "来自 115 的数字账号 UID，以字符串表示"
+        },
+        "kind": {
+          "type": [
+            "string"
+          ],
+          "description": "连接方式",
+          "enum": [
+            "cookie",
+            "bearer"
+          ]
+        }
+      },
+      "required": [
+        "uuid",
+        "kind"
+      ]
+    },
+    "output": {
+      "type": [
+        "object"
+      ],
+      "description": "头像",
+      "properties": {
+        "image": {
+          "type": [
+            "string"
+          ],
+          "description": "本地图像 data URI，无缓存时返回空字符串"
+        }
+      }
+    },
+    "example": {
+      "args": {
+        "uuid": "12345",
+        "kind": "cookie"
+      },
+      "result": {
+        "image": ""
+      }
+    }
+  }
+}

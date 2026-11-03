@@ -1,0 +1,26 @@
+{
+  "version": {
+    "entry": "ctx.components.call(\"mihomo\",\"version\",args)",
+    "input": {},
+    "output": {
+      "text": "核心版本及目标架构"
+    },
+    "example": {},
+    "permission": "mihomo/version@1",
+    "fileRead": false
+  },
+  "validate": {
+    "entry": "ctx.components.call(\"mihomo\",\"validate\",args)",
+    "input": {
+      "config": "路由规则列表的 JSON 字符串"
+    },
+    "output": {
+      "text": "验证结果"
+    },
+    "example": {
+      "config": "[\"MATCH,DIRECT\"]"
+    },
+    "permission": "mihomo/validate@1",
+    "fileRead": false
+  }
+}

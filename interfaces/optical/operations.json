@@ -1,0 +1,20 @@
+{
+  "list": {
+    "entry": "ctx.components.call(\"optical\",\"list\",args)",
+    "input": {
+      "path": "NAS 上 ISO 镜像的绝对路径"
+    },
+    "output": [
+      {
+        "name": "文件名",
+        "size": "字节数",
+        "directory": "是否为目录"
+      }
+    ],
+    "example": {
+      "path": "/media/disc.iso"
+    },
+    "permission": "optical/list@1",
+    "fileRead": true
+  }
+}

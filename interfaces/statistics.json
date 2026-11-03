@@ -1,0 +1,114 @@
+{
+  "summary": "按账号和调用方汇总用量",
+  "input": {
+    "type": [
+      "object"
+    ],
+    "description": "可选过滤条件，可组合",
+    "properties": {
+      "uuid": {
+        "type": [
+          "string"
+        ],
+        "description": "账号标识"
+      },
+      "caller": {
+        "type": [
+          "string"
+        ],
+        "description": "module:<插件 ID>、key:<密钥 ID> 或 admin"
+      }
+    }
+  },
+  "output": {
+    "type": [
+      "object"
+    ],
+    "description": "按模块、账号及直接调用方汇总",
+    "properties": {
+      "module": {
+        "type": [
+          "string"
+        ],
+        "description": "模块 ID"
+      },
+      "date": {
+        "type": [
+          "string"
+        ],
+        "description": "统计当前日期"
+      },
+      "timezone": {
+        "type": [
+          "string"
+        ],
+        "description": "Asia/Shanghai"
+      },
+      "totals": {
+        "type": [
+          "object"
+        ],
+        "description": "三个自然日窗口",
+        "properties": {
+          "today": {
+            "type": [
+              "object"
+            ],
+            "description": "今日各指标的整数计数",
+            "additionalProperties": true
+          },
+          "last7Days": {
+            "type": [
+              "object"
+            ],
+            "description": "含今日最近七天各指标的整数计数",
+            "additionalProperties": true
+          },
+          "last30Days": {
+            "type": [
+              "object"
+            ],
+            "description": "含今日最近三十天各指标的整数计数",
+            "additionalProperties": true
+          }
+        }
+      },
+      "accounts": {
+        "type": [
+          "object"
+        ],
+        "description": "账号标识映射到三个窗口",
+        "additionalProperties": true
+      },
+      "callers": {
+        "type": [
+          "object"
+        ],
+        "description": "调用方标识映射到三个窗口",
+        "additionalProperties": true
+      }
+    }
+  },
+  "example": {
+    "args": {},
+    "result": {
+      "module": "sample",
+      "date": "2026-11-03",
+      "timezone": "Asia/Shanghai",
+      "totals": {
+        "today": {
+          "calls": 0
+        },
+        "last7Days": {
+          "calls": 0
+        },
+        "last30Days": {
+          "calls": 0
+        }
+      },
+      "accounts": {},
+      "callers": {}
+    }
+  },
+  "notes": "calls 统计已进入执行的调用。查询统计不计数。额外指标由动作的 countWhen 声明。"
+}

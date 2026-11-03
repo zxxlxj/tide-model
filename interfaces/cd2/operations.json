@@ -1,0 +1,26 @@
+{
+  "invoke": {
+    "summary": "按实例授权执行具名 CD2 RPC",
+    "input": {
+      "type": [
+        "object"
+      ],
+      "description": "GetSystemInfo 请求示例。各 RPC 完整入参见 operations?operation=… 的 types",
+      "properties": {},
+      "required": []
+    },
+    "output": {
+      "type": [
+        "object"
+      ],
+      "description": "RPC 的结果按方法返回。字段类型见该实例的操作目录",
+      "properties": {},
+      "required": []
+    },
+    "example": {
+      "args": {},
+      "result": {}
+    },
+    "notes": "用 ctx.operations(\"cd2\",instance,完整RPC名) 或 HTTP operations 查询每个 RPC 的入参、返回结构与流方向。"
+  }
+}

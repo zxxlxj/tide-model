@@ -1,0 +1,17 @@
+{
+  "inspect": {
+    "entry": "ctx.components.call(\"ffprobe\",\"inspect\",args)",
+    "input": {
+      "path": "NAS 媒体文件绝对路径"
+    },
+    "output": {
+      "streams": "音视频流数组",
+      "format": "容器信息"
+    },
+    "example": {
+      "path": "/media/trailer.mp4"
+    },
+    "permission": "ffprobe/inspect@1",
+    "fileRead": true
+  }
+}
