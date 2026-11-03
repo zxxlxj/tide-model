@@ -2,7 +2,8 @@
   "list": {
     "entry": "ctx.components.call(\"optical\",\"list\",args)",
     "input": {
-      "path": "NAS 上 ISO 镜像的绝对路径"
+      "path": "NAS 上 ISO 镜像的绝对路径",
+      "entry": "可选，光盘内目录，默认根目录"
     },
     "output": [
       {
@@ -16,5 +17,63 @@
     },
     "permission": "optical/list@1",
     "fileRead": true
+  },
+  "read": {
+    "entry": "ctx.components.call(\"optical\",\"read\",args)",
+    "input": {
+      "path": "NAS 上的 ISO 文件",
+      "entry": "光盘内文件",
+      "offset": "字节偏移，默认 0",
+      "length": "最多 65536 字节"
+    },
+    "output": {
+      "base64": "文件内容",
+      "offset": "偏移",
+      "size": "光盘文件长度",
+      "eof": "是否到达末尾"
+    },
+    "example": {
+      "path": "/media/disc.iso",
+      "entry": "/README.TXT",
+      "length": 128
+    },
+    "permission": "optical/read@1",
+    "fileRead": true
+  },
+  "list-device": {
+    "entry": "ctx.components.call(\"optical\",\"list-device\",args)",
+    "input": {
+      "entry": "可选，光盘内目录，默认根目录"
+    },
+    "output": [
+      {
+        "name": "文件名",
+        "size": "字节数",
+        "directory": "是否为目录"
+      }
+    ],
+    "example": {},
+    "permission": "optical/list-device@1",
+    "fileRead": false
+  },
+  "read-device": {
+    "entry": "ctx.components.call(\"optical\",\"read-device\",args)",
+    "input": {
+      "entry": "光盘内文件",
+      "offset": "字节偏移，默认 0",
+      "length": "最多 65536 字节"
+    },
+    "output": {
+      "base64": "文件内容",
+      "offset": "偏移",
+      "size": "光盘文件长度",
+      "eof": "是否到达末尾"
+    },
+    "example": {
+      "entry": "/README.TXT",
+      "length": 128
+    },
+    "permission": "optical/read-device@1",
+    "fileRead": false
   }
 }

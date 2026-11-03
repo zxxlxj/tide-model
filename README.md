@@ -15,7 +15,7 @@
 | [ffmpeg](interfaces/ffmpeg/operations.json) | 视频预览帧 |
 | [mihomo](interfaces/mihomo/operations.json) | 核心版本、路由规则校验 |
 | [图像处理](interfaces/image/operations.json) | 图片信息与缩略图 |
-| [光盘读取](interfaces/optical/operations.json) | ISO 9660 主卷根目录 |
+| [光盘读取](interfaces/optical/operations.json) | ISO 9660 镜像与映射光驱的目录遍历、文件分块读取 |
 
 [插件统计接口](interfaces/statistics.json)由宿主统一提供。当前两款 115 插件可在所有受支持的 NAS 上安装并启用。宿主也支持开发者签发的离线授权，详见[安装与授权契约](interfaces/installation.md)。
 
