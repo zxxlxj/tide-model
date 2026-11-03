@@ -2,6 +2,8 @@
 
 宿主读取 [签名商店索引](./index.json)。插件包同时包含发布者签名、构建器签名和加密的 QuickJS 字节码。原生组件按 Linux amd64 或 arm64 分发。
 
+连接器 1.9.0 和账号管理器 1.4.0 使用按动作加载的 `tide.module/2` 发行格式，分别含 36 和 4 个执行分片。安装这两个版本需要支持 v2 发行格式的宿主。
+
 | 插件 | 能力 | 接口 |
 | --- | --- | --- |
 | 115 连接器 | 按账号 UUID 限速，支持 CK 与 Open 调用。扫码引导无需 UUID。 | [参数与返回值](interfaces/cloud115/operations.json) · [P115C 逐项覆盖](interfaces/cloud115/p115c-coverage.tsv) |
