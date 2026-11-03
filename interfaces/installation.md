@@ -13,3 +13,5 @@
 需要授权的插件在工作台显示「待授权」。公开的 115 账号管理器包含独立加密的管理界面，打开已启用的插件时由宿主提供签名验证后的浏览器产物。外部作者可用 ui.json 注册宿主渲染的界面。
 
 实体光驱需由管理员以只读方式映射到容器，例如 `--device /dev/sr0:/dev/sr0:r -e PLUGS_OPTICAL_DEVICE=/dev/sr0`。插件声明 optical/list-device@1 或 optical/read-device@1。镜像文件通过 optical/list@1 或 optical/read@1 加 fileRead 访问。支持 ISO 9660 主卷，文件读取每次最多 64 KiB。
+
+内网部署时可在同一请求中上送缺少的插件依赖。预览与安装使用相同的 multipart/form-data，root 提供一个主插件包，dependency 可以重复使用，最多传七个额外插件包。包的选择顺序不影响依赖顺序。宿主验签后只接受主插件依赖图中的包，其余缺失依赖从官方索引解析。
